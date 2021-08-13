@@ -47,6 +47,8 @@ void create(){
 void add_end(){
     struct node *newnode,*p;
     newnode=(struct node *)malloc(sizeof(struct node));
+    cout<<"enter the value to add end : "<<endl;
+    cin>>newnode->data;
 }
 
 
