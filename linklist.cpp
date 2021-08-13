@@ -42,6 +42,26 @@ void create(){
 
 }
 
+// display  
+
+void display(){
+    struct node *p;
+    if(start==NULL){
+        cout<<"No elements present in the list : "<<endl;
+    }
+    else{
+        p=start;
+        cout<<"The elements of the Linklist : "<<endl;
+        while(p!=NULL){
+            cout<<p->data<<" ";
+            p=p->next;
+        }
+    }
+}
+
 int main(){
     create();
+    create();
+    create();
+    display();
 }
