@@ -42,6 +42,14 @@ void create(){
 
 }
 
+
+// Add end 
+void add_end(){
+    struct node *newnode,*p;
+    newnode=(struct node *)malloc(sizeof(struct node));
+}
+
+
 // display  
 
 void display(){
