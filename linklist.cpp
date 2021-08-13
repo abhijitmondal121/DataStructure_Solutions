@@ -53,6 +53,13 @@ void add_end(){
     if(start==NULL){
         start=newnode;
     }
+    else{
+        p=start;
+        while(p->next!=NULL){
+            p=p->next;
+        }
+        p->next=newnode;
+    }
 }
 
 
