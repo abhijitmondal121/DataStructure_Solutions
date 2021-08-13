@@ -50,6 +50,9 @@ void add_end(){
     cout<<"enter the value to add end : "<<endl;
     cin>>newnode->data;
     newnode->next=NULL;
+    if(start==NULL){
+        start=newnode;
+    }
 }
 
 
