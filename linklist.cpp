@@ -85,4 +85,6 @@ int main(){
     create();
     create();
     display();
+    add_end();
+    display();
 }
