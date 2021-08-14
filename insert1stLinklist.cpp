@@ -9,7 +9,7 @@ struct Node{
 
 Node *head=NULL;
 
-
+// insert in 1st
 void insertBeg(int d){
 
     Node *ptr=new Node();
@@ -21,6 +21,25 @@ void insertBeg(int d){
 }
 
 
+// insert in last
+void insertEnd(int d){
+    Node *ptr= new Node();
+    ptr->data=d;
+    ptr->link=NULL;
+
+    if(head==NULL){
+        head=ptr;
+    }
+    else{
+        Node *temp=head;
+        while(temp->link!=NULL){
+            temp==temp->link;
+        }
+        temp->link=ptr;
+        
+    }
+    
+}
 
 
 
@@ -36,7 +55,7 @@ int main(){
     
     insertBeg(12);
     cout<<ptr->data <<" ";
-    
+    insertEnd(50);
 
 
     return 0;
