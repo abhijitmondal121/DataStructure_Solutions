@@ -1,35 +1,30 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-
- int main(){
-     int a[]={3,54,1,13,2,12};
-     int n=6;
-     int indMin,temp;
-     
-     cout<<"Before sorting : ";
-     for(int i=0;i<n;i++){
-         cout<<a[i]<<" ";
-     }
-     
-    // selection sorting
-    
+void selection(int a[],int n){
     for(int i=0;i<n-1;i++){
-        indMin=i;
+        int min= i;
         for(int j=i+1;j<n;j++){
-            if(a[j]<a[indMin]){
-                indMin=j;
+            if(a[j] < a[min]){
+                min=j;
             }
         }
-        temp=a[i];
-        a[i]=a[indMin];
-        a[indMin]=temp;
+        swap(a[min],a[i]);
     }
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
     
-     cout<<endl<<"After sorting : ";
-     for(int i=0;i<n;i++){
-         cout<<a[i]<<" ";
-     }
+}
+
+
+
+
+int main(){
+    int n=10;
+    int a[n]={7,2,1,9,56,4,89,3,12,11};
+    selection(a,n);
     
-     
- }
+    
+}
