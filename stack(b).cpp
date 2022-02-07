@@ -46,8 +46,6 @@ class stack{
     }
     
 };
-
-
 int main(){
     stack st(5);
     st.push(22);
